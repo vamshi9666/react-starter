@@ -48,30 +48,7 @@
     "test:cov": "yarn test --coverage",
     "test:update": "yarn test -u"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn run lint:fix && yarn format "
-    }
-  },
-  "lint-staged": {
-    "*.+(ts|tsx)": [
-      "npm run eslint:fix",
-      "prettier --write \"**/*.+(js|jsx)\""
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+ 
   "devDependencies": {
     "@apollo/react-testing": "^3.1.4",
     "@commitlint/cli": "^9.1.1",
@@ -112,5 +89,29 @@
     "source-map-explorer": "^2.1.2",
     "ts-jest": "^26.1.2",
     "typescript": "^3.9.6"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn run lint:fix && yarn format "
+    }
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "npm run eslint:fix",
+      "prettier --write \"**/*.+(js|jsx)\""
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
 }
