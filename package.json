@@ -92,8 +92,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn run lint:fix && yarn format "
+      "pre-commit": "yarn run lint:fix && yarn format ",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -113,5 +113,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
+  }
 }
