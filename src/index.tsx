@@ -14,6 +14,7 @@ Sentry.init({
   dsn: SENTRY_DNS,
 });
 
+//noop
 export const myTheme = {
   palette: {
     selection: '#f5a623',
