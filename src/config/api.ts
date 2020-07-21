@@ -1,4 +1,5 @@
+const AUTH_BASE_ENDPOINT = process.env.AUTH_BASE_ENDPOINT;
 export const SERVERLESS_FUNCTIONS_ENDPOINT_LOGIN =
-  'https://sapor-auth.vercel.app/api/login';
+  AUTH_BASE_ENDPOINT + '/login';
 export const SERVERLESS_FUNCTIONS_ENDPOINT_SIGNUP =
-  'https://sapor-auth.vercel.app/api/signup';
+  AUTH_BASE_ENDPOINT + '/signup';

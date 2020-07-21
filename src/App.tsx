@@ -1,10 +1,8 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/destructuring-assignment */
 import React, { ComponentType, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createLazyRoute } from './common/Utils';
 import NavBar from './components/NavBar';
 import LoginScreen from './layouts/login';
-import { createLazyRoute } from './common/Utils';
 
 const Home = createLazyRoute(lazy(() => import('./layouts/home')));
 const routes: Array<{

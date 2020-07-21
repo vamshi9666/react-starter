@@ -2,7 +2,7 @@
 import axios from 'axios';
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
-import { FadeLoader } from 'react-spinners';
+import FadeLoader from 'react-spinners/FadeLoader';
 import { LIGHT_ORANGE } from '../styles/colors';
 
 export const uploadToCloudinary = async (path: any) => {
@@ -31,7 +31,6 @@ export const uploadToCloudinary = async (path: any) => {
 export function createLazyRoute<T extends RouteComponentProps<any>>(
   RouteComponent: React.ComponentType<T>,
 ) {
-  // eslint-disable-next-line react/display-name
   return function (props: T) {
     return (
       <React.Suspense fallback={<FadeLoader color={LIGHT_ORANGE} />}>

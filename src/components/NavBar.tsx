@@ -9,7 +9,7 @@ const Navbar = () => (
       p={16}
       sx={{
         overflow: 'hidden',
-        boxShadow: '0 0 16px rgba(0, 0, 0, .25)',
+        boxShadow: '0 0 8px rgba(0, 0, 0, .25)',
       }}
     >
       <Text> My next app </Text>
